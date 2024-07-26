@@ -14,16 +14,16 @@ npm run deploy-local
 
 ## Steps to launch an NFT collection
 
-- [ ] fork this repository
-- [ ] comment out last 4 lines in `.gitignore`
-- [ ] prepare and deploy [assets](#assets)
-- [ ] copy `initArgs.local.did` to `initArgs.did` and adapt it to your needs (see [INIT_ARGS.md](INIT_ARGS.md))
-- [ ] [create canisters](#create-canisters)
-- [ ] [deploy NFT canister](#deploy-nft-canister)
+- [x] fork this repository
+- [x] comment out last 4 lines in `.gitignore`
+- [x] prepare and deploy [assets](#assets)
+- [x] copy `initArgs.local.did` to `initArgs.did` and adapt it to your needs (see [INIT_ARGS.md](INIT_ARGS.md))
+- [x] [create canisters](#create-canisters)
+- [x] [deploy NFT canister](#deploy-nft-canister)
 - [ ] create collection [summary](https://docs.google.com/document/d/1yady6xdsuInRbj8zLpIn7oG933UZUzg-vx_MUnr_jJ0/edit?usp=sharing)
-- [ ] add canister to [DAB](https://docs.google.com/forms/d/e/1FAIpQLSc-0BL9FMRtI0HhWj4g7CCYjf3TMr4_K_qqmagjzkUH_CKczw/viewform)
-- [ ] send collection details to entrepot via [form](https://collection-guide.paperform.co/)
-- [ ] top canister up with cycles
+- [x] add canister to [DAB](https://docs.google.com/forms/d/e/1FAIpQLSc-0BL9FMRtI0HhWj4g7CCYjf3TMr4_K_qqmagjzkUH_CKczw/viewform)
+- [x] send collection details to entrepot via [form](https://collection-guide.paperform.co/)
+- [x] top canister up with cycles
 - [ ] run off chain backup script with mainnet canister id
 - [ ] setup auto topup of canisters
 

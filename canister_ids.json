@@ -1,0 +1,11 @@
+{
+  "assets": {
+    "ic": "25fk7-naaaa-aaaap-ahpeq-cai"
+  },
+  "staging": {
+    "ic": "ubcso-fqaaa-aaaan-qlrca-cai"
+  },
+  "production": {
+    "ic": "hcsnx-2iaaa-aaaam-ac4bq-cai"
+  }
+}
