@@ -420,6 +420,12 @@ shared ({ caller = init_minter }) actor class Canister(cid : Principal, initArgs
     _Sale.enableSale(caller);
   };
 
+  public shared ({ caller }) func addWhitelists() : async () {
+    _trapIfRestoreEnabled();
+    assert(Principal.isController(caller));
+    _Sale.addWhitelists();
+  };
+
   public shared ({ caller }) func reserve(address : Address, ledger : Principal) : async Result.Result<(Address, Nat64), Text> {
     _trapIfRestoreEnabled();
     canistergeekMonitor.collectMetrics();

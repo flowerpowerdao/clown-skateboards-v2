@@ -306,6 +306,14 @@ module {
       #ok((paymentAddress, price));
     };
 
+    public func addWhitelists() {
+      for (whitelist in config.whitelists.vals()) {
+        for (accountId in whitelist.addresses.vals()) {
+          addWhitelistSpot(whitelist, accountId);
+        };
+      };
+    };
+
     public func retrieve(caller : Principal, paymentAddress : Types.Address) : async* Result.Result<(), Text> {
       var settlement = switch (_salesSettlements.get(paymentAddress)) {
         case (?settlement) { settlement };
