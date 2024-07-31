@@ -428,12 +428,14 @@ shared ({ caller = init_minter }) actor class Canister(cid : Principal, initArgs
 
   public shared ({ caller }) func reserve(address : Address, ledger : Principal) : async Result.Result<(Address, Nat64), Text> {
     _trapIfRestoreEnabled();
+    assert(false);
     canistergeekMonitor.collectMetrics();
     _Sale.reserve(caller, address, ledger);
   };
 
   public shared ({ caller }) func retrieve(paymentAddress : Address) : async Result.Result<(), Text> {
     _trapIfRestoreEnabled();
+    assert(false);
     canistergeekMonitor.collectMetrics();
     // no caller check, token will be sent to the address that was set on 'reserve'
     await* _Sale.retrieve(caller, paymentAddress);
