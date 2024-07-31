@@ -426,6 +426,12 @@ shared ({ caller = init_minter }) actor class Canister(cid : Principal, initArgs
     _Sale.addWhitelists();
   };
 
+  public shared ({ caller }) func airdropRemaining() : async () {
+    _trapIfRestoreEnabled();
+    assert(Principal.isController(caller));
+    _Sale.airdropRemaining(caller);
+  };
+
   public shared ({ caller }) func reserve(address : Address, ledger : Principal) : async Result.Result<(Address, Nat64), Text> {
     _trapIfRestoreEnabled();
     assert(false);
